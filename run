@@ -1,0 +1,15 @@
+#!/bin/bash
+set -e
+export HOME=/home/mez
+
+envtpl --keep-template --allow-missing -o /code/uwsgi.ini  /code/uwsgi.ini.tpl
+
+if [[ -n ${AUTO_MIGRATE} ]]; then
+    echo "Auto-migrate is enabled."
+    sleep 5
+    python manage.py migrate
+fi
+
+python manage.py collectstatic --noinput
+
+exec uwsgi --ini /code/uwsgi.ini
