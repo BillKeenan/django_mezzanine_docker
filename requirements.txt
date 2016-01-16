@@ -1,0 +1,6 @@
+Mezzanine==4.0.1
+psycopg2==2.6.1
+envtpl==0.5.0
+uWSGI==2.0.12
+dj-database-url==0.3.0
+whitenoise==2.0.6
