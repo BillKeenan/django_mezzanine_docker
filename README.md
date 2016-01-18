@@ -2,9 +2,9 @@
 Django Mezzanine CMS Starter Project using Docker & Postgresql
 
 # Dependencies
-- Python 3.4.x
-- Django 1.8.x
-- Mezzanine 4.0.1
+- Python 3.5.x
+- Django 1.9.x
+- Mezzanine 4.1.0
 - Postgresql 9.5
 
 # Usage
