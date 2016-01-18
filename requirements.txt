@@ -1,4 +1,5 @@
-Mezzanine==4.0.1
+Mezzanine==4.1.0
+Django==1.9.1
 psycopg2==2.6.1
 envtpl==0.5.0
 uWSGI==2.0.12
